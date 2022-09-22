@@ -1,1 +1,2 @@
-# fiap-avanade-web-2109
+# This repository was created for a class taught by Glaucio Daniel
+
