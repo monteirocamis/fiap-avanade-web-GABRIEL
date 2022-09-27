@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banco com Conta Digital, Cartão sem tarifas e mais | C6 Bank</title>
-    <link rel="stylesheet" href="/assets/css/main.css" />
+    <title>Banco com Conta Digital, Cartão sem tarifa e mais | C6 bank</title>
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
+
 <body>
-    <header>
+    <header class="top-site">
         <div>
             <svg class="jss6 jss12" viewBox="0 0 120 24" xmlns="http://www.w3.org/2000/svg">
                 <path clip-rule="evenodd" shape-rendering="geometricPrecision"
@@ -27,24 +27,53 @@
             </ul>
 
         </nav>
-        <button>Abra sua conta</button>
+        <button class="top-button">abra sua conta</button>
     </header>
     <section class="full-banner">
 
         <div class="destak">
-            <div class="">
+            <div>
                 <h3><span>C6 GLOBAL INVEST</span> Bolsa Americana e fundos globais direto no app</h3>
             </div>
             <h1>O banco da vida de 20 milhões de pessoas</h1>
-            <h2>Conta digital, cartão de crédito, investimento e mais: tudo em um só app.</h2>
+            <h2>Conta digital, cartão de crédito, investimento e mais: tudo em um só app</h2>
             <button>nossos produtos</button>
         </div>
     </section>
     <footer>
-        
+
     </footer>
     <script>
-        
+        const header = document.querySelector(".top-site");
+        const button = document.querySelector(".top-button");
+        header.style.background = "none";
+        button.classList.add("disabled");
+        // margin-bottom
+        // marginBottom
+        //janela e site
+        //window e document
+
+        //evento chamado scroll. JavaScript é uma linguagem dirigida a eventos
+        //Criamos uma escuta para um evento. 
+
+        window.addEventListener('scroll', (e) => {
+            if (window.scrollY != 0) {
+                header.style.background = "#fff";
+            }else{
+                header.style.background = "none";
+            }
+
+        });
+
+//teremos aula sobre funções em JavaScript.
+//A forma mais simples de criar uma função, é uma função de seta.
+// arrow function
+//   const msg = nome_time => alert(nome_time);
+// msg('Corinthians');
+//  (nome_time) => { corpo da função}
+// ()=>{}
+
+
     </script>
 </body>
 
